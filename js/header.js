@@ -1,5 +1,5 @@
 
-
+// 헤더 메뉴클릭
 
 function collapse(element) {
     var before = document.getElementsByClassName("active")[0]               // 기존에 활성화된 버튼
