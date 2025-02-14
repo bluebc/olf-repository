@@ -4,20 +4,6 @@
 /*패드 991px*/
 /*아이패드 768px*/
 /* 모바일 767px*/
-@media screen and (max-width: 767px) {
-  header .hd_all article hgroup {
-    width: 100%;
-  }
-  header .hd_all article hgroup a h1 {
-    margin: 0;
-  }
-  header .hd_all .pc_menu {
-    display: none;
-  }
-  header .hd_all .m_menu_button {
-    display: block;
-  }
-}
 /* 모바일2 576px */
 /* 모바일3 갤석시 425px */
 /* 모바일4 아이폰 375px *//*# sourceMappingURL=moblie.css.map */

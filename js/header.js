@@ -16,6 +16,8 @@ function collapse(element) {
         content.style.maxHeight = content.scrollHeight + "px";  // 접혀있는 경우 펼치기
     }
 }
+scrollEvent();
+
 
 $(function () {
     $(".menu-trigger").click(function (e) {
