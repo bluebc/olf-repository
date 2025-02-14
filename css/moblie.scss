@@ -1,0 +1,60 @@
+@import "./mixin";
+
+/*데탑 1440px*/
+@include desktop{
+
+}
+
+/*노트북 1024px*/
+@include laptop{
+
+}
+
+/*패드 991px*/
+@include tablet{
+
+}
+
+/*아이패드 768px*/
+@include itablet{
+
+}
+
+/* 모바일 767px*/
+@include mobile{
+    header {
+        .hd_all {
+            article {
+                hgroup{
+                    width: 100%;
+                    a {
+                        h1{
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            .pc_menu{
+                display: none;
+            }
+            .m_menu_button{
+                display: block;
+            }
+        }
+    }
+}
+
+/* 모바일2 576px */
+@include mobile2{
+
+}
+
+/* 모바일3 갤석시 425px */
+@include galaxy{
+
+}
+
+/* 모바일4 아이폰 375px */
+@include iphone{
+
+}
