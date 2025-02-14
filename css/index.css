@@ -29,10 +29,10 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
-  background-color: #ffffff;
 }
 header .hd_all {
   width: 100%;
+  height: 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,22 +44,6 @@ header .hd_all {
   -webkit-backdrop-filter: blur(2.5px);
           backdrop-filter: blur(2.5px);
   /* 반응형 */
-}
-header .hd_all .m_icon {
-  display: none;
-  background-image: url(/img/iconMy.png);
-  background-repeat: no-repeat;
-  position: absolute;
-  top: -9px;
-  left: 7px;
-  width: 100%;
-  height: 100%;
-  font-size: 0;
-  background-size: auto 8.8rem;
-}
-header .hd_all .m_icon a img {
-  width: 10px;
-  height: 10px;
 }
 header .hd_all article {
   width: 100%;
@@ -78,7 +62,8 @@ header .hd_all article hgroup a h1 {
   width: 100%;
 }
 header .hd_all article hgroup a h1 img {
-  width: 43%;
+  width: 70px;
+  margin-bottom: 5px;
 }
 header .hd_all article .pc_menu {
   width: 60%;
@@ -129,8 +114,8 @@ header .hd_all .m_menu_button {
   width: 50px;
   height: 50px;
   position: absolute;
-  right: 0.2rem;
-  top: 6px;
+  right: 1rem;
+  top: 22px;
   z-index: 10;
   display: none;
 }
@@ -162,508 +147,62 @@ header .hd_all .m_menu_button a.menu-trigger span:nth-child(3) {
 }
 header .hd_all .m_menu_button .menu-trigger.active-1 span:nth-child(1) {
   transform: translateY(8px) rotate(-45deg);
-  background-color: #ffffff;
 }
 header .hd_all .m_menu_button .menu-trigger.active-1 span:nth-child(2) {
   opacity: 0;
 }
 header .hd_all .m_menu_button .menu-trigger.active-1 span:nth-child(3) {
   transform: translateY(-12px) rotate(45deg);
-  background-color: #ffffff;
 }
-header .hd_all .m_menutool {
-  display: none;
-}
-header .hd_all .m_menutool .m_log {
-  display: none;
-  background: #373737;
+header .hd_all .m_menu {
   position: absolute;
   right: 0;
   top: 0;
   width: 100%;
-  height: 100%;
-  padding: 3rem 2rem;
-  z-index: 5;
-}
-header .hd_all .m_menutool .m_log .signin {
-  color: #999;
-}
-header .hd_all .m_menutool .m_log .signin a {
-  color: unset;
-}
-header .hd_all .m_menutool .m_log .signin a span {
-  text-decoration: underline;
-}
-header .hd_all .m_menutool .m_menu {
-  height: 100vh;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
-  background-color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.6117647059);
   display: none;
   text-align: center;
 }
-header .hd_all .m_menutool .m_menu .menu_style {
-  list-style: none;
-  padding-left: 0px;
+header .hd_all .m_menu .menu_style {
   width: 100%;
   padding-top: 6rem;
+  height: 100vh;
   margin-bottom: 0 !important;
 }
-header .hd_all .m_menutool .m_menu .menu_style .collapsible {
-  border-bottom: 0.1rem solid #000000;
-  background-color: #ffffff;
-  cursor: pointer;
-  padding: 18px;
+header .hd_all .m_menu .menu_style li {
   width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  display: inline-block;
-  width: 100%;
+  margin-bottom: 4rem;
+  font-size: 1.5rem;
+  /* .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    border: 1px solid grey;
+  } */
 }
-header .hd_all .m_menutool .m_menu .menu_style .collapsible:after {
-  content: "+";
-  color: EF4D74;
-  font-weight: bold;
-  float: right;
+header .hd_all .m_menu .menu_style li:last-child {
+  margin-bottom: 0 !important;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #2b0910;
 }
-header .hd_all .m_menutool .m_menu .menu_style .active, header .hd_all .m_menutool .m_menu .menu_style .collapsible:hover {
-  background-color: #ffffff;
-  color: #EF4D74;
+header .hd_all .m_menu .menu_style li a {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #2b0910;
 }
-header .hd_all .m_menutool .m_menu .menu_style .content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+header .hd_all .m_menu .menu_style li a:hover {
+  color: #fb9107;
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 11px;
 }
-header .hd_all .m_menutool .m_menu .menu_style .content a {
-  display: flex;
-  flex-wrap: wrap;
-  background: #F8F8F8;
-  padding: 1rem 0;
-  border-top: 0.1rem solid #eee;
-  width: 50%;
-  padding: 1rem;
-  box-sizing: border-box;
-  text-align: center;
-}
-header .hd_all .m_menutool .m_menu .menu_style .active:after {
-  content: "−";
-}
-header .hd_all .m_menutool .m_menu .btnbot {
-  color: #666;
-  display: block;
-  height: 3.4rem;
-  overflow: hidden;
-  line-height: 3.6rem;
-  padding: 0 1.5rem;
-  border-radius: 0.4rem;
-  border: 1px solid #ccc;
-  margin: 4rem;
+header .hd_all .m_menu .menu_style .lang img {
+  width: 25px;
 }
 header .hd_all .scroll_bar {
   background-color: #000;
-}
-
-main {
-  padding: 3rem 0 0;
-  max-width: 57rem;
-  margin: 0 auto;
-  position: relative;
-}
-main .visual {
-  position: relative;
-  height: 35rem;
-  overflow: hidden;
-}
-main .visual .str {
-  position: relative;
-  margin: 6rem 0 0;
-  z-index: 2;
-  color: #fff;
-  text-align: center;
-}
-main .visual .str .txt1 {
-  font-size: 1rem;
-  letter-spacing: -0.04rem;
-}
-main .visual .str .txt2 {
-  margin-top: 1rem;
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 2rem;
-  letter-spacing: -0.04rem;
-}
-main .visual .img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-size: cover;
-  background-position: 50% 100%;
-}
-main .visual .scroll {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  height: 4rem;
-  border-left: 0.1rem solid #ccc;
-}
-main .visual .scroll span {
-  position: absolute;
-  top: -3rem;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 1.4rem;
-  color: #fff;
-}
-main .section1 {
-  overflow: hidden;
-  display: block;
-  unicode-bidi: isolate;
-}
-main .section1 .content {
-  margin: 6rem 0 0;
-}
-main .section1 .content .wrap {
-  text-align: center;
-}
-main .section1 .content .wrap .tit {
-  color: #222;
-  font-size: 1rem;
-  font-weight: 500;
-}
-main .section1 .content .wrap .txt1 {
-  margin-top: 2rem;
-  color: #222;
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 1.5rem;
-  letter-spacing: -0.04rem;
-}
-main .section1 .content .wrap .txt2 {
-  margin-top: 1rem;
-  font-size: 1rem;
-  line-height: 1.3rem;
-  letter-spacing: -0.04rem;
-}
-main .section1 .content .slideContainer {
-  overflow: visible;
-  margin: 4rem 0 0 2rem;
-}
-main .section1 .content .slideContainer .swiper-wrapper .swiper-slide .inner {
-  margin-right: 2rem;
-}
-main .section1 .content .slideContainer .swiper-wrapper .swiper-slide .inner .img img {
-  vertical-align: top;
-  max-width: 100%;
-}
-main .section1 .content .slideContainer .swiper-wrapper .swiper-slide .inner .tit {
-  margin: 1.5rem 0 0.8rem;
-  color: #222;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 2.8rem;
-  letter-spacing: -0.06rem;
-}
-main .section1 .content .slideContainer .swiper-wrapper .swiper-slide .inner .txt {
-  color: #666;
-  font-size: 1.1rem;
-  line-height: 1.5rem;
-  letter-spacing: -0.06rem;
-}
-main .section1 .content .slideContainer .swiper-wrapper .swiper-slide .inner .btn {
-  display: flex;
-  margin-top: 2rem;
-}
-main .section1 .content .slideContainer .swiper-wrapper .swiper-slide .inner .btn a {
-  letter-spacing: -0.1rem;
-  display: inline-block;
-  width: auto;
-  height: 2.5rem;
-  line-height: 2rem;
-}
-main .section1 .content .slideContainer .swiper-wrapper .swiper-slide .inner .btn .btnbasic {
-  border: 0.1rem solid rgba(0, 0, 0, 0.6549019608);
-  border-radius: 0.4rem;
-  display: block;
-  color: #222;
-  overflow: hidden;
-  padding: 0 1.5rem;
-  font-size: 0.9rem;
-  box-sizing: border-box;
-  text-align: center;
-}
-main .section2 {
-  position: relative;
-  height: 40rem;
-}
-main .section2 .content {
-  margin: 6rem 0 0;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  z-index: 2;
-  color: #fff;
-  text-align: center;
-}
-main .section2 .content .tit {
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 2.4rem;
-  letter-spacing: -0.06rem;
-}
-main .section2 .content .txt {
-  font-size: 1.5rem;
-  line-height: 3rem;
-  letter-spacing: -0.06rem;
-}
-main .section2 .content div a {
-  color: rgb(255, 255, 255);
-}
-main .section2 .content div .btnbig {
-  display: inline-block;
-  width: auto;
-  margin-top: 3rem;
-  padding: 1rem 4.4rem;
-  background: none;
-  border: 0.1rem solid #fff;
-}
-main .section2 .content div .btnbig:link {
-  color: rgb(255, 255, 255);
-}
-main .section2 .img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-size: cover;
-  background-position: 50% 0;
-}
-main .section3 {
-  display: block;
-  unicode-bidi: isolate;
-}
-main .section3 .content {
-  margin: 6rem 0 0;
-  display: block;
-  unicode-bidi: isolate;
-}
-main .section3 .content .wrap {
-  text-align: center;
-  display: block;
-  unicode-bidi: isolate;
-}
-main .section3 .content .wrap .tit {
-  color: #222;
-  font-size: 1rem;
-  font-weight: 500;
-}
-main .section3 .content .wrap .txt1 {
-  margin-top: 2rem;
-  color: #222;
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 2rem;
-  letter-spacing: -0.04rem;
-}
-main .section3 .content .wrap .txt2 {
-  margin-top: 1rem;
-  font-size: 1rem;
-  line-height: 1.3rem;
-  letter-spacing: -0.04rem;
-}
-main .section3 .content .list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 3.5rem 1.5rem 0;
-}
-main .section3 .content .list li {
-  width: 50%;
-}
-main .section3 .content .list li a {
-  position: relative;
-  display: block;
-  margin: 0.3rem;
-}
-main .section3 .content .list li a .img {
-  display: block;
-  unicode-bidi: isolate;
-}
-main .section3 .content .list li a .img img {
-  vertical-align: top;
-  max-width: 100%;
-}
-main .section3 .content .list li a .caption {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  color: #fff;
-  text-align: center;
-}
-main .section3 .content .list li a .caption .tit {
-  margin: 2rem 0 0;
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-main .section4 {
-  height: 40rem;
-  display: block;
-  unicode-bidi: isolate;
-  position: relative;
-}
-main .section4 .content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  z-index: 2;
-  color: #fff;
-  text-align: center;
-  margin: 6rem 0 0;
-}
-main .section4 .content .tit {
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 2.4rem;
-  letter-spacing: -0.06rem;
-}
-main .section4 .content .txt1 {
-  margin: 2rem 0 1rem;
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 1.2;
-}
-main .section4 .content .txt2 {
-  font-size: 1rem;
-  line-height: 1.2rem;
-  letter-spacing: -0.06rem;
-}
-main .section4 .content div {
-  display: block;
-  unicode-bidi: isolate;
-}
-main .section4 .content div a {
-  color: rgb(255, 255, 255);
-}
-main .section4 .content div .btnbasic {
-  display: inline-block;
-  width: auto;
-  margin-top: 4rem;
-  padding: 1rem 4.4rem;
-  background: none;
-  border: 0.1rem solid #fff;
-}
-main .section4 .content div .btnbasic:link {
-  color: rgb(255, 255, 255);
-}
-main .section4 .img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-size: cover;
-  background-position: 50% 0;
-}
-
-footer {
-  position: relative;
-  padding: 2rem 2rem 10.5rem;
-  background: #373737;
-}
-footer .link {
-  margin-top: 1rem;
-  color: #999;
-  padding: 0;
-}
-footer .link li {
-  display: flex;
-  flex-direction: column;
-  font-size: 1rem;
-  line-height: 1.7rem;
-  letter-spacing: -0.05rem;
-}
-footer .link li a {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
-  color: inherit;
-  text-decoration: none;
-}
-footer .link li a:hover {
-  color: #ccc;
-}
-footer .familySite {
-  position: absolute;
-  right: 2rem;
-  bottom: 3.4rem;
-  left: 2rem;
-}
-footer .familySite .btn {
-  color: #ccc;
-  position: relative;
-  z-index: 3;
-  width: 100%;
-  height: 4rem;
-  padding-left: 1.5rem;
-  text-align: left;
-  font-family: "robo", "noto", "Malgun Gothic", "맑은 고딕", "Helvetica Neue", "Apple SD Gothic Neo", sans-serif;
-  background: #373737;
-  border: 0.1rem solid #666;
-  border-radius: 0.4rem;
-}
-footer .familySite .btn span {
-  position: relative;
-}
-footer .familySite .list {
-  display: none;
-  position: absolute;
-  right: 0;
-  bottom: 60px;
-  left: 0;
-}
-footer .familySite .list ul {
-  background-color: #373737;
-  border: 0.1rem solid #666;
-  border-radius: 0.4rem 0.4rem 0 0;
-  padding: 1rem;
-}
-footer .familySite .list ul li {
-  list-style: none;
-}
-footer .familySite .list ul li a {
-  display: block;
-  padding: 0.5rem;
-  color: #ccc;
-}
-footer .familySite .list .open {
-  display: block;
-  overflow: hidden;
-  height: 150px;
-  transition: height 0.3s;
-}
-footer .info {
-  margin-top: 3rem;
-  padding-bottom: 10rem;
-  background: url(/img/logo2.png) no-repeat 0 100%/7rem auto;
-}
-footer .info span {
-  color: #999;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  letter-spacing: -0.06rem;
 }/*# sourceMappingURL=index.css.map */
