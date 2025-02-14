@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>쥬비스연습사이트</title>
+    
+    <!-- meta  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/moblie.css">
+  
+    <!--favicon--->
+    <link href="#" rel="icon">
+
+    <!--js-->
+    <script src="js/header.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/footer.js"></script>
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+    
+    <header  class="header" >
+
+        <div class="hd_all">
+            <div class="m_icon">
+                <a href="#"></a>
+            </div>    
+            <article>
+                <hgroup>
+                    <a href="#home">
+                        <h1 class="menu_style">
+                            <img src="/img/logo.png" alt="logo">
+                        </h1>
+                    </a>
+                </hgroup>
+
+                <!-- <nav class="pc_menu">
+                    <ul class="menu_style">
+                        <li><a href="#" class="scroll"onClick="selectLink(this); return false;">A</a></li>
+                        <li><a href="#" class="scroll" onClick="selectLink(this); return false;">B</a></li>
+                        <li><a href="#" class="scroll" onClick="selectLink(this); return false;">C</a></li>
+                        <li><a href="#" class="scroll" onClick="selectLink(this); return false;">D</a></li>
+                        <li><a href="#" class="scroll" onClick="selectLink(this); return false;">E</a></li>
+                    </ul>
+                </nav> -->
+        
+                
+            </article>
+        
+            <!--반응형-->
+            <div class="m_menu_button">
+            <a href="#" class="menu-trigger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            </div>
+            <div class="m_menutool">
+                <div class="m_log">
+                    <div class="signin">
+                        <a href="#">
+                            <span>로그인</span>이 필요합니다.
+                        </a>
+                    </div>
+                </div>
+
+                <nav class="m_menu">
+                    <ul class="menu_style">
+                        <li type="button" class="collapsible" onclick="collapse(this);">
+                        <a >기업 소개</a>
+                        <li class="content" >
+                            <a href="#">쥬비드 소개</a>
+                            <a href="#">수상내역</a>
+                            <a href="#">특허내역</a>
+                            <a href="#">회사연혁</a>
+                            <a href="#">오시는 길</a>
+                        </li>
+                        </li>
+                    
+                        <li type="button" class="collapsible" onclick="collapse(this);">
+                        <a >사업분야</a>
+                        </li>
+                        
+                        <li type="button" class="collapsible" onclick="collapse(this);">
+                        <a >R&D센터</a>
+                        <li class="content" >
+                            <a href="#">비만연구소 소개</a>
+                            <a href="#">비만연구소 활동</a>
+                            <a href="#">성과보고서</a>
+                        </li>
+                        </li>
+                    
+                        <li type="button" class="collapsible" onclick="collapse(this);">
+                        <a >사회공헌</a>
+                        <li class="content" >
+                            <a href="#">작은선물프로젝트</a>
+                            <a href="#">시회공헌 활동</a>
+                            <a href="#">쥬비스 캠페인</a>
+                            <a href="#">시니어응원 포로젝트</a>
+                        </li>
+                        </li>
+                        <li type="button" class="collapsible" onclick="collapse(this);">
+                        <a >인재채용</a>
+                        <li class="content" >
+                            <a href="#">인재상</a>
+                            <a href="#">인사제도</a>
+                            <a href="#">직무소개</a>
+                            <a href="#">채용안내</a>
+                            <a href="#">채용공고</a>
+                        </li>
+                        </li>
+                        <li type="button" class="collapsible" onclick="collapse(this);">
+                        <a >미디어센터</a>
+                        <li class="content" >
+                        <a href="#">기업뉴스</a>
+                        <a href="#">보도자료</a>
+                        <a href="#">TV협찬광고</a>
+                        <a href="#">홍보영상</a>
+                        <a href="#">옥외광고</a>
+                        <a href="#">잡지광고</a>
+                        </li>
+                        </li>
+                    
+                        <a href="#" class="btnbot" >고객센터</a>
+                    </ul>
+                </nav>
+
+            </div>
+            
+
+            <!-- 반응형 js -->
+            <script type="text/javascript">
+                $(function () {
+                $(".menu-trigger").click(function (e) {
+                    e.preventDefault();
+                    $(this).toggleClass('active-' + 1);
+                });
+                });
+        
+            </script>
+
+            <script type="text/javascript">
+                $(function () {
+                    // Toggle menu or log visibility when the menu button is clicked
+                    $(".m_menu_button").click(function () {
+                        $(".m_menu, .m_log").animate({ width: "toggle" }, 150);
+                    });
+            
+                    // Hide menu or log when a link with the 'scroll' class is clicked
+                    $(".scroll").click(function () {
+                        $(".m_menu, .m_log").hide();
+                    });
+                });
+            </script>
+
+            <script>
+                function collapse(element) {
+                    var before = document.getElementsByClassName("active")[0]               // 기존에 활성화된 버튼
+                    if (before && document.getElementsByClassName("active")[0] != element) {  // 자신 이외에 이미 활성화된 버튼이 있으면
+                        before.nextElementSibling.style.maxHeight = null;   // 기존에 펼쳐진 내용 접고
+                        before.classList.remove("active");                  // 버튼 비활성화
+                    }
+                    element.classList.toggle("active");         // 활성화 여부 toggle
+
+                    var content = element.nextElementSibling;
+                    if (content.style.maxHeight != 0) {         // 버튼 다음 요소가 펼쳐져 있으면
+                        content.style.maxHeight = null;         // 접기
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";  // 접혀있는 경우 펼치기
+                    }
+                }
+            </script>
+
+        </div>
+    
+    </header>
+    <main class="main">
+        
+    <div class="visual" >
+        <div class="str">
+            <p class="txt1">
+                <br>
+                TOTAL HEALTHCARE COMPANY
+            </p>
+            <p class="txt2">
+                세상을 건강하게 변화시키는<br>
+                토털 헬스케어 기업,<br>
+                쥬비스 다이어트
+            </p>
+        </div>
+        <div class="img" style="background-image: url(/img/main.jfif);"></div>
+        <div class="scroll">
+            <span>Scroll</span>
+        </div>
+    </div>
+    <section id="section1" class="section1">
+        <div class="content">
+            <div class="wrap">
+                <h3 class="tit">사업분야</h3>
+                <p class="txt1"> 
+                    쥬비스는<br>
+                    오직 고객의 건강을<br>
+                    최우선의 가치로 생각합니다.
+                </p>
+                <p class="txt2">
+                    온라인과 오프라인을 아우르는
+                    <br>
+                    통합 플랫폼 서비스를 통해<br>
+                    오직 개인에게 최적화된<br>
+                    맞춤형 헬스케어 서비스를 제공해드립니다.<br>
+                </p>
+            </div>
+
+            <div class="slideContainer swiper mySwiper ">
+                <ul class="swiper-wrapper ">
+                <li class="swiper-slide">
+                    <div class="inner">
+                        <div class="img">
+                            <img src="/img/scr1.jpg" alt="scroll1">
+                        </div>
+                        <div class="tit">쥬비스다이어트</div>
+                        <div class="txt">
+                            211가지 측정 데이터를 기반으로 한
+                            맞춤형 다이어트 솔루션
+                        </div>
+                        <div class="btn">
+                            <a href="#" class="btnbasic">바로가기</a>
+                        </div>
+                    </div>
+                </il>
+                
+                <li class="swiper-slide">
+                    <div class="inner">
+                        <div class="img">
+                            <img src="/img/scr2.jpg" alt="scroll1">
+                        </div>
+                        <div class="tit">쥬비스다이어트</div>
+                        <div class="txt">
+                            211가지 측정 데이터를 기반으로 한
+                            맞춤형 다이어트 솔루션
+                        </div>
+                        <div class="btn">
+                            <a href="#" class="btnbasic">바로가기</a>
+                        </div>
+                    </div>
+                </il>
+                <li class="swiper-slide">
+                    <div class="inner">
+                        <div class="img">
+                            <img src="/img/scr3.jpg" alt="scroll1">
+                        </div>
+                        <div class="tit">쥬비스다이어트</div>
+                        <div class="txt">
+                            211가지 측정 데이터를 기반으로 한
+                            맞춤형 다이어트 솔루션
+                        </div>
+                        <div class="btn">
+                            <a href="#" class="btnbasic">바로가기</a>
+                        </div>
+                    </div>
+                </il>
+
+                
+
+                </ul>
+                <!-- <div class="swiper-scrollbar"></div>
+                <div class="swiper-pagination"></div> -->
+        </div>
+    </section>
+    <section class="section2">
+        <div class="content">
+            <h3 class="tit">성과/활동</h3>
+            <p class="txt">
+                온·오프라인을 넘나드는<br>
+                혁신적인 헬스케어 서비스를<br>
+                제공하는 쥬비스
+            </p>
+            <div>
+                <a href="#" class="btnbig">자세히보기</a>
+            </div>
+        </div>
+        <div class="img" style="background-image: url(/img/main2.jpg);"></div>
+    </section>
+    <section class="section3">
+        <div class="content">
+            <div class="wrap">
+                <h3 class="tit">공유/나눔</h3>
+                <p class="txt1">
+                    쥬비스가 만들어 가는<br>
+                    모두가 건강하고 행복한 세상
+                </p>
+                <p class="txt2">
+                    쥬비스다이어트는 다양한 사회 공헌 활동으로<br>
+                    기업의 사회적 책임을 다하는데 앞장서겠습니다. 
+                </p>
+            </div>
+            <ul class="list">
+                <li>
+                    <a href="#">
+                        <div class="img">
+                            <img src="img/tou1.jpg">
+                        </div>
+                        <div class="caption">
+                            <div class="tit">
+                                직은선물<br>
+                                프로젝트
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img">
+                            <img src="img/tou2.jpg">
+                        </div>
+                        <div class="caption">
+                            <div class="tit">
+                                사회공헌<br>
+                                활동
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img">
+                            <img src="img/tou3.jpg">
+                        </div>
+                        <div class="caption">
+                            <div class="tit">
+                                쥬비스<br>
+                                캠페인
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img">
+                            <img src="img/tou4.jpg">
+                        </div>
+                        <div class="caption">
+                            <div class="tit">
+                                시니어응원<br>
+                                프로젝트
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="section4">
+        <div class="content">
+            <h3 class="tit">인재채용</h3>
+            <p class="txt1">
+                사람이 곧<br>
+                미래가 되는 쥬비스
+            </p>
+            <p class="txt2">
+                고객에게 건강한 삶의 가치를 전하는 쥬비스다이어트,<br>
+                그 길을 함께 걸어갈 헬스케어 전문 인재를 기다립니다.<br>
+            </p>
+            <div>
+                <a href="#" class="btnbasic">자세히보기</a>
+            </div>
+        </div>
+        <div class="img" style="background-image: url(img/main3.jpg);"></div>
+    </section>
+
+    <!-- js -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+    </script>
+
+   
+
+    </main>
+
+    <footer class="footer">
+        <ul class="link">
+            <li>
+                <a href="#">이용약관</a>
+                <a href="#">개인정보 처리방침</a>
+                <a href="#">이메일 무단 수집거부</a>
+                <a href="#">고객의견 접수</a>
+                <a href="#">제휴 | 사업문의</a>
+                <a href="#">대관안내</a>
+            </li>
+        </ul>
+        <div class="familySite">
+            <button type="button" class="btn" onclick="familySite();">
+                <span>Family Site</span>
+            </button>
+            <div class="list open">
+                <ul >
+                    <li>
+                        <a href="#">쥬비스 기업</a>
+                    </li>
+                    <li>
+                        <a href="#">쥬비스 다이어트</a>
+                    </li>
+                    <li>
+                        <a href="#">쥬비스 몰</a>
+                    </li>
+                    <li>
+                        <a href="#">쥬비스 멤버스</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="info">
+            <span>쥬비스다이어트 대표이사 : 김대경</span><br>
+            <span>주소 : 서울특별시 강남구 삼성로 434 익성대치 (대치동 942-4)14, 15층</span><br>
+            <span>TEL : 1600-0441</span><br>
+            <span>FAX : 02-2653-0441</span><br>
+            <span>사업자번호 : 220-88-37259</span><br>
+            <span><span>통신판매신고번호 : 제2017-서울강남-01937</span></span><br>
+            <span>COPYRIGHT© 2025. JUVIS. ALL RIGHTS RESERVED.</span><br>
+        </p>
+
+        <!-- <script>
+            function familySite() {
+            const mydiv = document.getElementsByClassName('.open');
+            if(mydiv.style.visibility === 'hidden') {
+            mydiv.style.visibility = 'visible';
+            }else {
+            mydiv.style.visibility = 'hidden';
+            }
+            }
+        </script> -->
+       
+       <script type="text/javascript">
+        $(document).ready(function() {
+            $(".btn").click(function() {
+                $(".open").toggle();
+            });
+        });
+    </script>
+
+    </footer>
+    
+
+
+    <script> AOS.init(); </script>
+
+
+
+
+
+</body>
+</html>
