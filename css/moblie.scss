@@ -19,7 +19,19 @@
 // 웹모바일 768사이즈 이용
 /*아이패드 768px*/
 @include itablet{
-
+    header {
+        .hd_all {
+            article {
+                .gnb{
+                    
+                }
+                
+            }
+            .m_menu_button{
+                display: block;
+            }
+        }
+    }
 }
 
 /* 모바일 767px*/

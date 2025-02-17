@@ -20,11 +20,12 @@
     <link href="img/favicon.ico" rel="icon">
 
     <!--js-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
     <script src="js/header.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/menu_scroll.js"></script>
 
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -35,32 +36,38 @@
     <header  class="header" >
 
     <div class="hd_all">
-        <article class="gnb">
-            <hgroup>
-                <a href="#health">
-                    <h1 class="menu_style">
-                    <img src="img/uni-well-logo.png" alt="logo">
-                    </h1>
-                </a>
-        
+        <article >
+            <hgroup class="gnb">
+                <div>
+                    <a href="#health">
+                        <h1 >
+                            <img src="img/uni-well-logo.png" alt="logo">
+                        </h1>
+                    </a>
+            
+                </div>
+    
+                <nav class="pc_menu">
+                    <ul class="menu_style">
+                        <li><a href="#health" class="scroll"onClick="selectLink(this); return false;">건강 스토리</a></li>
+                        <li><a href="#story" class="scroll" onClick="selectLink(this); return false;">우리들 이야기</a></li>
+                        <li><a href="#shoppingmall" class="scroll" onClick="selectLink(this); return false;">쇼핑몰</a></li>
+                        <li><a href="#cs" class="scroll" onClick="selectLink(this); return false;">고객센터</a></li>
+                        <li><a href="#event" class="scroll" onClick="selectLink(this); return false;">이벤트&행사</a></li>
+                    </ul>
+                </nav>
             </hgroup>
-
-            <nav class="pc_menu">
-                <ul class="menu_style">
-                    <li><a href="#health" class="scroll"onClick="selectLink(this); return false;">건강 스토리</a></li>
-                    <li><a href="#story" class="scroll" onClick="selectLink(this); return false;">우리들 이야기</a></li>
-                    <li><a href="#shoppingmall" class="scroll" onClick="selectLink(this); return false;">쇼핑몰</a></li>
-                    <li><a href="#cs" class="scroll" onClick="selectLink(this); return false;">고객센터</a></li>
-                    <li><a href="#event" class="scroll" onClick="selectLink(this); return false;">이벤트&행사</a></li>
-                </ul>
-            </nav>
+            
             
             <div class="he_link" >
-                <a href="#" class="scroll">로그인
+                <a href="#" class="scroll">
+                    <span>로그인 </span>
                 </a>
-                <a href="#" class="scroll">회원가입
+                <a href="#" class="scroll">
+                    <span>회원가입</span>
                 </a>
-                <a href="#" class="scroll">고객센터
+                <a href="#" class="scroll">
+                    <span>고객센터</span>
                 </a>
             </div>
             
@@ -90,8 +97,6 @@
                 <li><a href="#event" class="scroll" onClick="selectLink(this); return false;">이벤트&행사</a></li>
             </ul>
         </nav>
-
-        
 
         <div class="m_menu_button">
             <a href="#" class="menu-trigger">
@@ -139,23 +144,174 @@
 
     <!-- 건강스토리 -->
     <section id="health" >
-        <div class="content"></div>
+        <div class="content">
+            <div class="he-img">
+                <!-- <div class="he-bg"><img src="img/bg.jpg"></div> -->
+                <div class="he-bg " style="background-image: url(img/bg.jpg);"></div>
+                <div class="he-swiper">
+                    <div class="swiper-container swiper ">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/he-sw1.jpg"></div>
+                            <div class="swiper-slide"><img src="img/he-sw2.jpg"></div>
+                            <div class="swiper-slide"><img src="img/he-sw3.jpg"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="he-tit">
+                    <p>당신의</p>
+                    <P>성공스토리</P>
+                </div>
+            </div>
+            <div class="he-fix">
+                <h2>TOTAL CARE SPECIALIZING IN HEALTH</h2>
+            </div> 
+        </div>
     </section>
     <!-- 우리들이야기 -->
     <section id="story" >
-        <div class="content"></div>
+        <div class="content">
+            <article class="st-flex1">
+                <div class="st-img"><img src="img/st1.jpg"></div>
+                <div class="st-tet">
+                    <h2>비움과 채움</h2>
+                    <h3>일상에서 누구나 쉽게 실천할 수 있는<br>
+                    비움프로그램</h2>
+                    <div class="st-more">
+                        <a href="#"><span>READ MORE</span></a>
+                    </div>
+                </div>
+            </article>
+            <article class="st-flex2">
+                <div class="st-tet">
+                    <h2>건강 코칭</h2>
+                    <h3>생활 속 바른 습관을 형성하는<br>
+                    토탈 러닝메이트 서비스</h2>
+                    <div class="st-more">
+                        <a href="#"><span>READ MORE</span></a>
+                    </div>
+                </div>
+                <div class="st-img"><img src="img/st2.jpg"></div>
+                
+            </article>
+            <article class="st-flex3">
+                <div class="st-img"><img src="img/st3.jpg"></div>
+                <div class="st-tet">
+                    <h2>생명 나눔</h2>
+                    <h3>더불어 사는 사회에서 실천하는 나눔의<br>
+                    봉사 프로젝트</h2>
+                    <div class="st-more">
+                        <a href="#"><span>READ MORE</span></a>
+                    </div>
+                </div>
+            </article>
+            <article class="st-flex4">
+                <div class="st-tet">
+                    <h2>휴먼 리셋</h2>
+                    <h3>명상, 요가, 피트니스, 여행 등<br>
+                    자연 속 휴식과 명상을 통해 함께하는<br>
+                    최적의 힐링 설계 서비스</h2>
+                    <div class="st-more">
+                        <a href="#"><span>READ MORE</span></a>
+                    </div>
+                </div>
+                <div class="st-img"><img src="img/st4.jpg"></div>
+            </article>
+        </div>
     </section>
     <!-- 쇼핑몰 -->
     <section id="shoppingmall" >
-        <div class="content"></div>
+        <div class="content">
+            <div class="shop-img"><img src="img/he-sw22.jpg"></div>
+            <div class="shop-tet">
+                <h3>나의 하루를 기록하는</h3>
+                <h2>플랫폼 서비스</h2>
+                <h4>일상속에서도 편안하게 관리할 수 있어서 언제 어디서든<br>
+                꾸준함을 유지할 수 있게 도와주는 1:1 서비스</h4>
+                <div class="shop-now">
+                    <a>
+                        <span>VIEW NOW</span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- 고객센터 -->
     <section id="cs" >
-        <div class="content"></div>
+        <div class="content">
+            <div class="cs-img" style="background-image: url(img/he-sw33.jpg);"></div>
+            <div class="cs-tet">
+                <article class="cs-abs1">
+                    <h2>체계적인 관리</h2>
+                    <h4>기록의 습관을 통해 일상에서도 꾸준하게 관리<br>
+                    할 수 있고 체계적인 프로그램을 편하게 관리<br>
+                    할 수 있게 제작한 맞춤 서비스</h4>
+                </article>
+                <article class="cs-abs2">
+                    <h2>저속노화를 도화주는 건강 체크</h2>
+                    <h4>기대 수명이 올라간 현대 사회에서 노화를 늦추는 것은<br>
+                    건강한 삶을 영위하는데 필수적인 요소이다.<br>
+                    개인의 건강 상태에 맞춰 전문가의 조언과<br>
+                    다양한 프로그램을 통해 전반적인 건강을 증진시킨다.</h4>
+                </article>
+            </div>
+        </div>
     </section>
     <!-- 이벤트&행사 -->
     <section id="event" >
-        <div class="content"></div>
+        <div class="content">
+            <div class="ev-tet">
+                <h2>체험 후기</h2>
+                <h4>우수 고객들의 성공 스토리</h4>
+            </div>
+            <div class="swiper swiper-container2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="ev-sw-img"><img src="img/he-sw11.jpg"></div>
+                    <div class="ev-sw-tet" >
+                        <h3>3월 단식중에</h3>
+                        <h4>프로그램</h3>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="ev-sw-img"><img src="img/st4.jpg"></div>
+                    <div class="ev-sw-tet" >
+                        <h3>4월 단식중에</h3>
+                        <h4>프로그램</h3>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="ev-sw-img"><img src="img/he-sw22.jpg"></div>
+                    <div class="ev-sw-tet" >
+                        <h3>5월 단식중에</h3>
+                        <h4>프로그램</h3>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="ev-sw-img"><img src="img/he-sw33.jpg"></div>
+                    <div class="ev-sw-tet" >
+                        <h3>6월 단식중에</h3>
+                        <h4>프로그램</h3>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="ev-sw-img"><img src="img/st1.jpg"></div>
+                    <div class="ev-sw-tet" >
+                        <h3>7월 단식중에</h3>
+                        <h4>프로그램</h3>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="ev-sw-img"><img src="img/st2.jpg"></div>
+                    <div class="ev-sw-tet" >
+                        <h3>8월 단식중에</h3>
+                        <h4>프로그램</h3>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+        </div>
     </section>
 
     </main>
@@ -179,17 +335,15 @@
                 <span>본점 : 충청북도 청주시 흥덕구 오송읍 오송생명11로 230(키토산GMP공장)</span>
                 <span>지점 : 충청북도 청주시 홍덕구 강내면 산단길 40</span>
                 <p>
-                    <span>사업자등록번호 : 301-86-29231</span>
-                    <span>E-mail : greenohs@hanmail.net</span>
+                    <span class="sp1">사업자등록번호 : 301-86-29231</span>
+                    <span class="sp1">E-mail : greenohs@hanmail.net</span>
                 </p>
                 <p>
-                    <span>대표번호 : 1899-8475</span>
-                    <span>팩스번호 : 043-285-8574</span>
+                    <span class="sp1">대표번호 : 1899-8475</span>
+                    <span class="sp1">팩스번호 : 043-285-8574</span>
                 </p>
             </div>
         </div>
-
-        
 
         <ul class="ft_link">
             <li>
