@@ -4,8 +4,261 @@
 /*패드 991px*/
 /*아이패드 768px*/
 @media screen and (max-width: 768px) {
+  header .hd_all {
+    height: 70px;
+  }
+  header .hd_all article {
+    display: none;
+  }
+  header .hd_all .m_he_link {
+    display: block;
+  }
+  header .hd_all .gnbgroup {
+    display: block;
+  }
   header .hd_all .m_menu_button {
     display: block;
+  }
+  main #health {
+    background-color: #f4f4f4;
+  }
+  main #health .content .he-img {
+    height: 140vh;
+  }
+  main #health .content .he-img .he-bg {
+    height: 65vh;
+    transform: translate(-50%, -120%);
+  }
+  main #health .content .he-img .he-swiper {
+    top: 37rem;
+    right: 0rem;
+  }
+  main #health .content .he-img .he-swiper .swiper-container {
+    overflow: visible;
+  }
+  main #health .content .he-img .he-swiper .swiper-container .swiper-wrapper .swiper-slide {
+    position: relative;
+  }
+  main #health .content .he-img .he-swiper .swiper-container .swiper-wrapper .swiper-slide:nth-child(1) {
+    left: -6rem;
+    top: 0rem;
+  }
+  main #health .content .he-img .he-swiper .swiper-container .swiper-wrapper .swiper-slide:nth-child(2) {
+    left: 5rem;
+    top: -5rem;
+  }
+  main #health .content .he-img .he-swiper .swiper-container .swiper-wrapper .swiper-slide:nth-child(3) {
+    left: -3rem;
+    top: -10rem;
+  }
+  main #health .content .he-img .he-tit {
+    writing-mode: vertical-lr;
+    white-space: nowrap;
+    bottom: 14rem;
+    right: 10rem;
+  }
+  main #health .content .he-img .he-tit p {
+    position: absolute;
+    color: rgb(99, 99, 99);
+  }
+  main #health .content .he-img .he-tit p span {
+    margin-bottom: 0.3rem;
+    border: 1px solid rgb(99, 99, 99);
+    padding: 0.1rem;
+    border-radius: 10%;
+  }
+  main #health .content .he-img .he-tit p:nth-child(1) {
+    right: 2rem;
+  }
+  main #health .content .he-img .he-tit p:nth-child(2) {
+    top: 2rem;
+  }
+  main #health .content .he-fix h2 {
+    font-size: 2rem;
+  }
+  main #story .content article:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
+  main #story .content article:nth-child(even) {
+    flex-direction: column;
+    color: #ffffff;
+    background-color: #adbb84;
+  }
+  main #story .content article .st-img {
+    width: 100%;
+  }
+  main #story .content article .st-tet {
+    width: 100%;
+    padding: 5rem 0 5rem 0;
+    position: relative;
+  }
+  main #story .content article .st-tet h2 {
+    font-size: 3rem;
+  }
+  main #story .content article .st-tet h3 {
+    font-size: 2rem;
+  }
+  main #story .content article .st-tet .st-more {
+    right: 0;
+    position: absolute;
+    bottom: -36rem;
+  }
+  main #story .content article .st-tet .st-more a {
+    border: none;
+    color: #ffffff;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.3960784314);
+  }
+  main #program52 .content .flex-52 .tet-52 h2 {
+    font-size: 3rem;
+  }
+  main #program52 .content .flex-52 .swiper-container3 {
+    display: none;
+  }
+  main #program52 .content .flex-52 .nosw {
+    margin: 0 3rem;
+  }
+  main #program52 .content .flex-52 .nosw .nowra {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+  }
+  main #program52 .content .flex-52 .nosw .nowra .nogrid {
+    text-align: center;
+  }
+  main #program52 .content .flex-52 .nosw .nowra .nogrid:nth-child(5) {
+    grid-column: 3/1;
+    grid-row-start: 3;
+  }
+  main #program52 .content .flex-52 .nosw .nowra .nogrid img {
+    border: 1px solid;
+    width: 100%;
+  }
+  main #shoppingmall {
+    height: 100%;
+    position: relative;
+  }
+  main #shoppingmall .content {
+    padding: 5rem 0;
+    flex-direction: column-reverse;
+  }
+  main #shoppingmall .content .shop-img {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 8rem;
+  }
+  main #shoppingmall .content .shop-tet {
+    width: 100%;
+    padding: 0;
+    align-items: center;
+  }
+  main #shoppingmall .content .shop-tet div {
+    display: flex;
+  }
+  main #shoppingmall .content .shop-tet div h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+  main #shoppingmall .content .shop-tet div h2 {
+    font-size: 2rem;
+  }
+  main #shoppingmall .content .shop-tet h4 {
+    text-align: center;
+  }
+  main #shoppingmall .content .shop-tet .shop-now {
+    position: absolute;
+    bottom: 3rem;
+    right: 0;
+  }
+  main #shoppingmall .content .shop-tet .shop-now a {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+  }
+  main #resetprogram {
+    height: 100%;
+  }
+  main #resetprogram .content {
+    padding: 5rem 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main #resetprogram .content .rst-tet {
+    margin-left: 0;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  main #resetprogram .content .ret-img {
+    margin-left: 0;
+  }
+  main #resetprogram .content .ret-img img {
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+  }
+  main #cs .content {
+    height: 50vh;
+  }
+  main #cs .content .cs-tet article {
+    display: none;
+  }
+  main #event .content .ev-tet h2 {
+    font-size: 3rem;
+  }
+  main #event .content .ev-tet h4 {
+    font-weight: bold;
+  }
+  main #event .content .swiper-container2 {
+    padding-top: 3rem;
+  }
+  main #event .content .swiper-container2 .swiper-wrapper .swiper-slide .ev-sw-img {
+    padding-bottom: 0;
+  }
+  main #event .content .swiper-container2 .swiper-wrapper .swiper-slide .ev-sw-img img {
+    border: none;
+    border-radius: 0;
+  }
+  main #event .content .swiper-container2 .swiper-wrapper .swiper-slide .ev-sw-tet {
+    border: 2px solid rgba(0, 0, 0, 0.0078431373);
+    background-color: #ffffff;
+    padding: 1rem 8rem;
+  }
+  footer {
+    padding: 0 3rem;
+  }
+  footer .ft-fot {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  footer .ft-fot .ft_logo {
+    width: 100%;
+    flex-direction: row;
+  }
+  footer .ft-fot .ft_logo a img {
+    margin-right: 3rem;
+    width: 120px;
+  }
+  footer .ft-fot .ft_info {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  footer .ft-fot .ft_info .f_company span:nth-child(1) {
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  footer .ft-fot .ft_info .ft_cs p {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .ft-fot .ft_link {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  footer .ft-fot .ft_link li {
+    align-items: flex-start;
   }
 }
 /* 모바일 767px*/
