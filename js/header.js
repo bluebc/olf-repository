@@ -1,24 +1,19 @@
-
 // 메뉴버튼 토글
 $(function () {
-    $(".m_menu_button").click(function () {
-      $(".m_menutool").animate({ height: "toggle" }, 200);
-    });
+  $(".m_menu_button").click(function () {
+    $(".m_tag, .m_log").animate({ width: "toggle" }, 200);
   });
+
+  
+});
 
 // gnb
 $(function () {
-    $(".gnbgroup").click(function () {
-      $(".m_menu").animate({ height: "toggle" }, 200);
-      
-    });
+  $(".gnbgroup").click(function () {
+    $(".m_menu").animate({ height: "toggle" }, 200);
   });
+});
 
-  // $('#mygnb').click(function() {
-	//   $('#mygnb').toggleClass('under')
-
-	// })
- 
 
 // 아코디언
   function collapse(element) {

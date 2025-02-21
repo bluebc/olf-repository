@@ -5,7 +5,6 @@ $(document).ready(function(){
     direction: "vertical",
       slidesPerView: 3,
       spaceBetween: 30,
-      mousewheel: true,
       loop: true,
       on:{
         // 1. 초기화 이전에 슬라이드 복제
@@ -69,7 +68,7 @@ $(document).ready(function(){
           slidesPerView: 5
         },
         768: {
-          slidesPerView: 1
+          slidesPerView: 1,
         },
       },
       autoplay: {

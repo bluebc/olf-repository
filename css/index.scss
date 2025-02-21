@@ -19,13 +19,13 @@ header{
 
     .hd_all{
         width: 100%;
-        height: 130px;
+        //height: 130px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         position: relative;
         margin: 0 auto;
-        padding: 0 3rem;
+        padding: 1.5rem 3rem;
         background: rgba(36, 30, 30, 0.1);
         box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
         backdrop-filter: blur(3px);
@@ -151,17 +151,10 @@ header{
 
         .gnbgroup{
           display: none;
-          position: absolute;
-          top: 0.5rem;
-          left:17rem;
+          position: relative;
+          height: 4.4rem;
           font-size: 0;
-          width: 12rem;
-          background: url(/img/uni-well-logo-sd-m.png) no-repeat, 50% 0;
-          height: 4rem;
-          background-size: auto 100%;
-          background-repeat: no-repeat;
-          background-position: 50% 0;
-          vertical-align: middle;
+          text-align: center;
           z-index: 1;
           &::after{
             content: "";
@@ -170,13 +163,24 @@ header{
             height: 1.5rem;
             vertical-align: middle;
             border-radius: 50%;
-            background: #F2F2F2 url(/img/iconCateArrow.png) no-repeat 50% 50%;
+            background: #F2F2F2 url(/img/iconCateArrow.png) no-repeat;
             background-size: cover;
-            margin-left: 11rem;
-            margin-top: 1.2rem;
+            margin-top: -0.5rem;
+          }
+          button{
+            height: 6rem;
+            span{
+              display: inline-block;
+              margin: 0 auto;
+              vertical-align: middle;
+              background: url(/img/uni-well-logo-sd-m.png) no-repeat;
+              background-position: center center;
+              height: 4.4rem;
+              background-size: auto 100%;
+              width: 11.2rem;
+            }
           }
         }
-
         .m_menu {
               display: none;
               position: absolute;
@@ -188,7 +192,7 @@ header{
               text-align: center;
               .menu_style {
                 width: 100%;
-                padding: 3rem 0;
+                padding: 5rem 0;
                 margin-bottom: 0 !important;
                 li {
                   width: 100%;
@@ -271,6 +275,7 @@ header{
               .menu-trigger.active-1 {
                 span:nth-child(1) {
                   transform: translateY(8px) rotate(-45deg);
+                  background-color: #ffffff;
                 }
                 
                 span:nth-child(2) {
@@ -279,16 +284,16 @@ header{
                 
                 span:nth-child(3) {
                   transform: translateY(-12px) rotate(45deg);
+                  background-color: #ffffff;
                 }
               }
         }
         //메뉴 리스트
         .m_menutool{
               display: none;
-              
+
               .m_log{
-                //display: none;
-                
+                display: none;
                 background: #6b7a5e;
                 position: absolute;
                 right: 0;
@@ -322,15 +327,15 @@ header{
                 }
               }
               .m_tag {
-                //height: 100vh;
-                
+                // z-index: 0;
                 position: absolute;
                 right: 0;
-                left: 0;
                 top: 0;
                 width: 100%;
-                height: 100%;
-                z-index: 0;
+                height: 100vh;
+                background-color:#ffffff;
+                display: none;
+                text-align: center;
                   .m_ac{
                     list-style: none;
                     padding-left: 0px;
@@ -352,7 +357,7 @@ header{
                         display: inline-block;
                         width: 100%;
                         &:after {
-                          content: '\002B';
+                          content: '\002B'; // +기호
                           color: EF4D74;
                           font-weight: bold;
                           float: right;
@@ -382,7 +387,7 @@ header{
                     }
                     .active:after {
                       content: "\2212";
-                    }
+                    } // - 기호
                 }
                 
                 .btnbot{
@@ -399,23 +404,25 @@ header{
               }
 
         }
-        // .scroll_bar {
-        //       background-color: #000;
-        // }  
+
+
+        .scroll_bar {
+              background-color: #000;
+        }  
     }
 }
 
-// .scroll_bar{
-//   background-color: #ffffff;
-//   a {
-//     color: #000; /* 원하는 색상으로 변경하세요. */
-//     :hover{
-//       color: #000; /* 원하는 색상으로 변경하세요. */
-//     }
-//     .logo_off{display: none;}
-//     .logo_on{display: inline !important; width: 130px;  }
-//   }
-// }
+.scroll_bar{
+  background-color: #ffffff;
+  a {
+    color: #000; /* 원하는 색상으로 변경하세요. */
+    :hover{
+      color: #000; /* 원하는 색상으로 변경하세요. */
+    }
+    .logo_off{display: none;}
+    .logo_on{display: inline !important; width: 130px;  }
+  }
+}
 
 
 
@@ -436,14 +443,13 @@ main{
         background-size: cover;
         .he-bg{
               position: absolute;
-              top: 50%;
-              left: 50%;
-              width: 100%;
-              height: 100%;
+              top: 0;
+              left: 0;
+              bottom: 0;
+              right: 0;
               background-size: cover; 
               background-repeat: no-repeat;
               background-position: center;
-              transform: translate(-50%, -50%);
         }
         .he-swiper{
           position: relative;
@@ -501,6 +507,7 @@ main{
     .content{
       article{
         display: flex;
+        flex-wrap: wrap;
         width: 100%;
         .st-img{
           width: 50%;
@@ -555,20 +562,22 @@ main{
       padding: 5rem 0;
         .flex-52{
             .tet-52{
-              box-sizing: content-box;
-              padding: 2rem;
-              margin: 3rem 10rem 5rem ; //가운데 정렬
-              border: 5px solid rgb(88, 88, 88);
-              border-style: double none double none;
-
+              border-width:6px; 
+              border-style:double; 
+              border-color:rgba(99, 99, 99, 0.61); 
+              width:40%; 
+              margin:0 auto; 
+              padding:2rem; 
+              text-align:center;
               h2{
+                
                 text-align: center;
                 font-size: 4rem;
                 line-height: 1.3;
               }
             }
             .swiper-container3{
-              margin: 0 7rem;
+              margin: 5rem  7rem 0;
                 .swiper-wrapper{
                   //display: flex;
                     .swiper-slide{
@@ -694,15 +703,14 @@ main{
       background-size: cover;
       
       .cs-img{
-        position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            transform: translate(-50%, -50%);
+              position: absolute;
+              top: 0;
+              left: 0;
+              bottom: 0;
+              right: 0;
+              background-size: cover; 
+              background-repeat: no-repeat;
+              background-position: center;
             filter: brightness(50%)
       }
       .cs-tet{

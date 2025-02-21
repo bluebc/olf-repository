@@ -29,13 +29,12 @@ header {
 }
 header .hd_all {
   width: 100%;
-  height: 130px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   margin: 0 auto;
-  padding: 0 3rem;
+  padding: 1.5rem 3rem;
   background: rgba(36, 30, 30, 0.1);
   box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
   -webkit-backdrop-filter: blur(3px);
@@ -134,17 +133,10 @@ header .hd_all .m_he_link a {
 }
 header .hd_all .gnbgroup {
   display: none;
-  position: absolute;
-  top: 0.5rem;
-  left: 17rem;
+  position: relative;
+  height: 4.4rem;
   font-size: 0;
-  width: 12rem;
-  background: url(/img/uni-well-logo-sd-m.png) no-repeat, 50% 0;
-  height: 4rem;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  vertical-align: middle;
+  text-align: center;
   z-index: 1;
 }
 header .hd_all .gnbgroup::after {
@@ -154,10 +146,22 @@ header .hd_all .gnbgroup::after {
   height: 1.5rem;
   vertical-align: middle;
   border-radius: 50%;
-  background: #F2F2F2 url(/img/iconCateArrow.png) no-repeat 50% 50%;
+  background: #F2F2F2 url(/img/iconCateArrow.png) no-repeat;
   background-size: cover;
-  margin-left: 11rem;
-  margin-top: 1.2rem;
+  margin-top: -0.5rem;
+}
+header .hd_all .gnbgroup button {
+  height: 6rem;
+}
+header .hd_all .gnbgroup button span {
+  display: inline-block;
+  margin: 0 auto;
+  vertical-align: middle;
+  background: url(/img/uni-well-logo-sd-m.png) no-repeat;
+  background-position: center center;
+  height: 4.4rem;
+  background-size: auto 100%;
+  width: 11.2rem;
 }
 header .hd_all .m_menu {
   display: none;
@@ -171,7 +175,7 @@ header .hd_all .m_menu {
 }
 header .hd_all .m_menu .menu_style {
   width: 100%;
-  padding: 3rem 0;
+  padding: 5rem 0;
   margin-bottom: 0 !important;
 }
 header .hd_all .m_menu .menu_style li {
@@ -242,17 +246,20 @@ header .hd_all .m_menu_button a.menu-trigger span:nth-child(3) {
 }
 header .hd_all .m_menu_button .menu-trigger.active-1 span:nth-child(1) {
   transform: translateY(8px) rotate(-45deg);
+  background-color: #ffffff;
 }
 header .hd_all .m_menu_button .menu-trigger.active-1 span:nth-child(2) {
   opacity: 0;
 }
 header .hd_all .m_menu_button .menu-trigger.active-1 span:nth-child(3) {
   transform: translateY(-12px) rotate(45deg);
+  background-color: #ffffff;
 }
 header .hd_all .m_menutool {
   display: none;
 }
 header .hd_all .m_menutool .m_log {
+  display: none;
   background: #6b7a5e;
   position: absolute;
   right: 0;
@@ -284,11 +291,12 @@ header .hd_all .m_menutool .m_log .signin .m-up {
 header .hd_all .m_menutool .m_tag {
   position: absolute;
   right: 0;
-  left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
-  z-index: 0;
+  height: 100vh;
+  background-color: #ffffff;
+  display: none;
+  text-align: center;
 }
 header .hd_all .m_menutool .m_tag .m_ac {
   list-style: none;
@@ -354,6 +362,26 @@ header .hd_all .m_menutool .m_tag .btnbot {
   border: 1px solid #ccc;
   margin: 4rem;
 }
+header .hd_all .scroll_bar {
+  background-color: #000;
+}
+
+.scroll_bar {
+  background-color: #ffffff;
+}
+.scroll_bar a {
+  color: #000; /* 원하는 색상으로 변경하세요. */
+}
+.scroll_bar a :hover {
+  color: #000; /* 원하는 색상으로 변경하세요. */
+}
+.scroll_bar a .logo_off {
+  display: none;
+}
+.scroll_bar a .logo_on {
+  display: inline !important;
+  width: 130px;
+}
 
 /*main*/
 main {
@@ -372,14 +400,13 @@ main #health .content .he-img {
 }
 main #health .content .he-img .he-bg {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  transform: translate(-50%, -50%);
 }
 main #health .content .he-img .he-swiper {
   position: relative;
@@ -430,6 +457,7 @@ main #health .content .he-fix h2 {
 }
 main #story .content article {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
 }
 main #story .content article .st-img {
@@ -475,11 +503,13 @@ main #program52 .content {
   padding: 5rem 0;
 }
 main #program52 .content .flex-52 .tet-52 {
-  box-sizing: content-box;
+  border-width: 6px;
+  border-style: double;
+  border-color: rgba(99, 99, 99, 0.61);
+  width: 40%;
+  margin: 0 auto;
   padding: 2rem;
-  margin: 3rem 10rem 5rem;
-  border: 5px solid rgb(88, 88, 88);
-  border-style: double none double none;
+  text-align: center;
 }
 main #program52 .content .flex-52 .tet-52 h2 {
   text-align: center;
@@ -487,7 +517,7 @@ main #program52 .content .flex-52 .tet-52 h2 {
   line-height: 1.3;
 }
 main #program52 .content .flex-52 .swiper-container3 {
-  margin: 0 7rem;
+  margin: 5rem 7rem 0;
 }
 main #program52 .content .flex-52 .swiper-container3 .swiper-wrapper .swiper-slide img {
   height: 300px;
@@ -605,14 +635,13 @@ main #cs .content {
 }
 main #cs .content .cs-img {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  transform: translate(-50%, -50%);
   filter: brightness(50%);
 }
 main #cs .content .cs-tet article {
