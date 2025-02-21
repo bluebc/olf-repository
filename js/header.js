@@ -1,7 +1,22 @@
+// 메뉴버튼 토글
+$(function () {
+  $(".m_menu_button").click(function () {
+    $(".m_tag, .m_log").animate({ width: "toggle" }, 200);
+  });
+
+  
+});
+
+// gnb
+$(function () {
+  $(".gnbgroup").click(function () {
+    $(".m_menu").animate({ height: "toggle" }, 200);
+  });
+});
 
 
-
-function collapse(element) {
+// 아코디언
+  function collapse(element) {
     var before = document.getElementsByClassName("active")[0]               // 기존에 활성화된 버튼
     if (before && document.getElementsByClassName("active")[0] != element) {  // 자신 이외에 이미 활성화된 버튼이 있으면
         before.nextElementSibling.style.maxHeight = null;   // 기존에 펼쳐진 내용 접고
@@ -16,10 +31,12 @@ function collapse(element) {
         content.style.maxHeight = content.scrollHeight + "px";  // 접혀있는 경우 펼치기
     }
 }
-
 $(function () {
-    $(".menu-trigger").click(function (e) {
+    $(".menu-trigger ").click(function (e) {
         e.preventDefault();
         $(this).toggleClass('active-' + 1);
     });
     });
+// 
+
+
