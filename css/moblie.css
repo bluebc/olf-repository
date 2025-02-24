@@ -25,56 +25,34 @@
   main #health {
     background-color: #f4f4f4;
   }
-  main #health .content .he-img {
-    height: 140vh;
-  }
   main #health .content .he-img .he-bg {
     height: 60vh;
   }
-  main #health .content .he-img .he-swiper {
-    top: 47rem;
-    right: 0rem;
-  }
-  main #health .content .he-img .he-swiper .swiper-container {
-    overflow: visible;
-  }
-  main #health .content .he-img .he-swiper .swiper-container .swiper-wrapper .swiper-slide {
+  main #health .content .he-img .he-box {
     position: relative;
-  }
-  main #health .content .he-img .he-swiper .swiper-container .swiper-wrapper .swiper-slide:nth-child(1) {
-    left: -6rem;
-    top: 0rem;
-  }
-  main #health .content .he-img .he-swiper .swiper-container .swiper-wrapper .swiper-slide:nth-child(2) {
-    left: 5rem;
-    top: -5rem;
-  }
-  main #health .content .he-img .he-swiper .swiper-container .swiper-wrapper .swiper-slide:nth-child(3) {
-    left: -3rem;
-    top: -10rem;
-  }
-  main #health .content .he-img .he-tit {
-    writing-mode: vertical-lr;
-    white-space: nowrap;
+    top: 16rem;
+    left: 50%;
     transform: translate(-50%, -50%);
-    bottom: 14%;
-    right: 16%;
   }
-  main #health .content .he-img .he-tit p {
-    position: absolute;
-    color: rgb(99, 99, 99);
+  main #health .content .he-img .he-box .he-container .he-wrapper .he-sw {
+    margin: 0 auto;
+    text-align: center;
   }
-  main #health .content .he-img .he-tit p span {
-    margin-bottom: 0.3rem;
-    border: 1px solid rgb(99, 99, 99);
-    padding: 0.1rem;
-    border-radius: 10%;
+  main #health .content .he-img .he-box .he-container .he-wrapper .he-sw:nth-child(1) {
+    transform: translate(-25%, 30%);
   }
-  main #health .content .he-img .he-tit p:nth-child(1) {
-    right: 2rem;
+  main #health .content .he-img .he-box .he-container .he-wrapper .he-sw:nth-child(2) {
+    transform: translate(-2%, -3%);
   }
-  main #health .content .he-img .he-tit p:nth-child(2) {
-    top: 2rem;
+  main #health .content .he-img .he-box .he-container .he-wrapper .he-sw:nth-child(3) {
+    transform: translate(-18%, -29%);
+  }
+  main #health .content .he-img .he-box .he-container .he-wrapper .he-sw img {
+    width: 250px;
+  }
+  main #health .content .he-img .he-box .he-tit {
+    right: 7rem;
+    bottom: 16rem;
   }
   main #health .content .he-fix h2 {
     font-size: 5vw;
@@ -285,34 +263,65 @@
 }
 /* 모바일 767px*/
 /* 모바일2 576px */
+@media screen and (max-width: 576px) {
+  main #health .content .he-img .he-box {
+    top: 13rem;
+  }
+  main #health .content .he-img .he-box .he-container .he-wrapper .he-sw:nth-child(1) {
+    transform: translate(-22%, 30%);
+  }
+  main #health .content .he-img .he-box .he-container .he-wrapper .he-sw:nth-child(2) {
+    transform: translate(-3%, -3%);
+  }
+  main #health .content .he-img .he-box .he-container .he-wrapper .he-sw:nth-child(3) {
+    transform: translate(-18%, -29%);
+  }
+  main #health .content .he-img .he-box .he-container .he-wrapper .he-sw img {
+    width: 200px;
+  }
+  main #health .content .he-img .he-box .he-tit {
+    right: 5rem;
+    bottom: 15rem;
+  }
+}
 /* 모바일3 갤석시 425px */
 @media screen and (max-width: 425px) {
-  main #health .content .he-img .he-swiper {
-    top: 32rem;
+  header .hd_all .m_he_link a {
+    top: 1rem;
+    left: 1rem;
+    width: 3rem;
+    height: 3rem;
+    background-size: 100%;
   }
-  main #health .content .he-img .he-swiper .swiper-container {
-    width: 13rem;
-    height: 30rem;
+  header .hd_all .gnbgroup button span {
+    height: 3.5rem;
+    width: 9rem;
   }
-  main #health .content .he-img .he-swiper .swiper-container .swiper-wrapper .swiper-slide:nth-child(1) {
-    left: -3rem;
-    top: 3rem;
+  header .hd_all .m_menu_button {
+    right: 1rem;
   }
-  main #health .content .he-img .he-swiper .swiper-container .swiper-wrapper .swiper-slide:nth-child(2) {
-    left: 3rem;
-    top: -1rem;
+  main #health .content .he-img .he-box {
+    top: 12rem;
   }
-  main #health .content .he-img .he-swiper .swiper-container .swiper-wrapper .swiper-slide:nth-child(3) {
-    left: -3rem;
-    top: -5rem;
+  main #health .content .he-img .he-box .he-container .he-wrapper .he-sw img {
+    width: 180px;
   }
-  main #health .content .he-img .he-tit {
-    right: 20%;
+  main #health .content .he-img .he-box .he-container .he-wrapper .he-sw:nth-child(1) {
+    transform: translate(-21%, 25%);
   }
-  main #health .content .he-img .he-tit p span {
+  main #health .content .he-img .he-box .he-container .he-wrapper .he-sw:nth-child(2) {
+    transform: translate(1%, -5%);
+  }
+  main #health .content .he-img .he-box .he-container .he-wrapper .he-sw:nth-child(3) {
+    transform: translate(-16%, -36%);
+  }
+  main #health .content .he-img .he-box .he-tit {
+    right: 3.5rem;
+  }
+  main #health .content .he-img .he-box .he-tit p span {
     padding: 0;
   }
-  main #health .content .he-img .he-tit p:nth-child(1) {
+  main #health .content .he-img .he-box .he-tit p:nth-child(1) {
     right: 1.2rem;
   }
   main #shoppingmall {
@@ -382,6 +391,13 @@
 }
 /* 모바일4 아이폰 375px */
 @media screen and (max-width: 375px) {
+  main #health .content .he-img .he-box {
+    top: 10rem;
+  }
+  main #health .content .he-img .he-box .he-container .he-wrapper .he-sw img {
+    border: 5px solid white;
+    width: 150px;
+  }
   footer .ft-sns ul li a {
     width: 2rem;
     height: 2rem;

@@ -47,58 +47,41 @@
             background-color: #f4f4f4;
             .content{
                 .he-img{
-                    height: 140vh;
                     .he-bg{
                         height: 60vh;
-                        //background-position: 0 -2rem;
                     }
-                    .he-swiper{
-                        top: 47rem;
-                        right: 0rem;
-                        .swiper-container{
-                            overflow: visible;
-                            .swiper-wrapper{
-                                .swiper-slide{
-                                    position: relative;
+                    .he-box{
+                        position: relative;
+                        top: 16rem;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        .he-container{
+                            .he-wrapper{
+                                .he-sw{
+                                    margin: 0 auto;
+                                    text-align: center;
                                     &:nth-child(1){
-                                        left: -6rem;
-                                        top: 0rem;
+                                        transform: translate(-25%, 30%);
                                     }
                                     &:nth-child(2){
-                                        left: 5rem;
-                                        top: -5rem;
+                                        transform: translate(-2%, -3%);
                                     }
                                     &:nth-child(3){
-                                        left: -3rem;
-                                        top: -10rem;
+                                        transform: translate(-18%, -29%);
                                     }
-                                }
+                                    img{
+                                      width: 250px;
+                                    }
+                                      
+                                  }
                             }
                         }
-                    }
-                    .he-tit{
-                        writing-mode: vertical-lr;
-                        white-space: nowrap;
-                        transform: translate(-50%, -50%);
-                        bottom: 14%;
-                        right: 16%;
-                        p{
-                            span{
-                                margin-bottom: 0.3rem;
-                                border: 1px solid rgb(99, 99, 99);
-                                padding: 0.1rem;
-                                border-radius: 10%;
-                            }
-                            position: absolute;
-                            &:nth-child(1){
-                                right: 2rem;
-                            }
-                            &:nth-child(2){
-                                top: 2rem;
-                            }
-                            color: rgb(99, 99, 99);
+                        .he-tit{
+                            right: 7rem;
+                            bottom: 16rem;
                         }
                     }
+                    
                 }
                 .he-fix{
                     h2{
@@ -379,51 +362,106 @@
 
 /* 모바일2 576px */
 @include mobile2{
-
-}
-
-/* 모바일3 갤석시 425px */
-@include galaxy{
     main{
         #health{
             .content{
                 .he-img{
-                    .he-swiper{
-                        top: 32rem;
-                        .swiper-container{
-                            width: 13rem;
-                            height: 30rem;
-                            .swiper-wrapper{
-                                .swiper-slide{
+                    .he-box{
+                        top: 13rem;
+                        .he-container{
+                            .he-wrapper{
+                                .he-sw{
                                     &:nth-child(1){
-                                        left: -3rem;
-                                        top: 3rem;
+                                        transform: translate(-22%, 30%);
                                     }
                                     &:nth-child(2){
-                                        left: 3rem;
-                                        top: -1rem;
+                                        transform: translate(-3%, -3%);
                                     }
                                     &:nth-child(3){
-                                        left: -3rem;
-                                        top: -5rem;
+                                        transform: translate(-18%, -29%);
+                                    }
+                                    img{
+                                        width: 200px;
+                                    }
+                                }
+                            } 
+                        }
+                        .he-tit{
+                            right: 5rem;
+                            bottom: 15rem;
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}
+
+/* 모바일3 갤석시 425px */
+@include galaxy{
+    header{
+        .hd_all{
+            .m_he_link{
+                a{
+                    top: 1rem;
+                    left: 1rem;
+                    width: 3rem;
+                    height: 3rem;
+                    background-size: 100%;
+                }
+            }
+            .gnbgroup{
+                button{
+                    span{
+                        height: 3.5rem;
+                        width: 9rem;
+                    }
+                }
+            }
+            .m_menu_button{
+                right: 1rem;
+            }
+        }
+    }
+    main{
+        #health{
+            .content{
+                .he-img{
+                    .he-box{
+                        top: 12rem;
+                        .he-container{
+                            .he-wrapper{
+                                .he-sw{
+                                    img{
+                                        width: 180px;
+                                    }
+                                    //position: relative;
+                                    &:nth-child(1){
+                                        transform: translate(-21%, 25%);
+                                    }
+                                    &:nth-child(2){
+                                        transform: translate(1%, -5%);
+                                    }
+                                    &:nth-child(3){
+                                        transform: translate(-16%, -36%);
                                     }
                                 }
                             }
-                            
                         }
-                    }
-                    .he-tit{
-                        right: 20%;
-                        p{
-                            span{
-                                padding: 0;
+                        .he-tit{
+                            right: 3.5rem;
+                            p{
+                                span{
+                                    padding: 0;
+                                }
+                            &:nth-child(1){
+                                right: 1.2rem;
                             }
-                        &:nth-child(1){
-                            right: 1.2rem;
-                        }
-                            
-                        }
-                    } 
+                                
+                            }
+                        } 
+                    }
+                    
                 }
             }
         }
@@ -509,6 +547,28 @@
 
 /* 모바일4 아이폰 375px */
 @include iphone{
+    main{
+        #health{
+            .content{
+                .he-img {
+                    .he-box {
+                        top: 10rem;
+                        .he-container {
+                            .he-wrapper {
+                                .he-sw{
+                                    img{
+                                        border: 5px solid white;
+                                        width: 150px;
+                                    }
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } 
     footer{
         .ft-sns{
             ul{

@@ -389,17 +389,12 @@ main {
   height: 100%;
 }
 main #health .content .he-img {
-  height: 130vh;
-  display: block;
   position: relative;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-size: cover;
 }
 main #health .content .he-img .he-bg {
-  position: absolute;
+  display: block;
+  height: 130vh;
+  position: relative;
   top: 0;
   left: 0;
   bottom: 0;
@@ -408,38 +403,47 @@ main #health .content .he-img .he-bg {
   background-repeat: no-repeat;
   background-position: center;
 }
-main #health .content .he-img .he-swiper {
-  position: relative;
-  top: 15rem;
-  right: -38rem;
-  overflow: hidden;
-}
-main #health .content .he-img .he-swiper .swiper-container {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 300px;
-  height: 700px;
-}
-main #health .content .he-img .he-swiper .swiper-container .swiper-wrapper .swiper-slide {
-  border: 10px solid #ffffff;
-  border-radius: 5%;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-main #health .content .he-img .he-swiper .swiper-container .swiper-wrapper .swiper-slide img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-main #health .content .he-img .he-tit {
+main #health .content .he-img .he-box {
   position: absolute;
-  bottom: 20rem;
+  top: 16rem;
   right: 16rem;
-  display: flex;
-  gap: 5px;
 }
-main #health .content .he-img .he-tit p {
-  color: #ffffff;
+main #health .content .he-img .he-box .he-container .he-wrapper .he-sw {
+  margin-bottom: 2rem;
+  max-width: 100%;
+  height: auto;
+}
+main #health .content .he-img .he-box .he-container .he-wrapper .he-sw img {
+  border: 10px solid white;
+  border-radius: 5%;
+  width: 300px;
+  aspect-ratio: 6/4;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main #health .content .he-img .he-box .he-tit {
+  position: absolute;
+  writing-mode: vertical-lr;
+  white-space: nowrap;
+  transform: translate(-50%, -50%);
+  right: 8rem;
+  bottom: -2rem;
+}
+main #health .content .he-img .he-box .he-tit p {
+  position: absolute;
+  color: rgb(99, 99, 99);
+}
+main #health .content .he-img .he-box .he-tit p span {
+  margin-bottom: 0.3rem;
+  border: 1px solid rgb(99, 99, 99);
+  padding: 0.1rem;
+  border-radius: 10%;
+}
+main #health .content .he-img .he-box .he-tit p:nth-child(1) {
+  right: 2rem;
+}
+main #health .content .he-img .he-box .he-tit p:nth-child(2) {
+  top: 2rem;
 }
 main #health .content .he-fix {
   width: 100%;

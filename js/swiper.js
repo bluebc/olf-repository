@@ -1,22 +1,4 @@
 
-// id="health" 건강스토리
-$(document).ready(function(){
-  var swiper = new Swiper(".swiper-container", {
-    direction: "vertical",
-      slidesPerView: 3,
-      spaceBetween: 30,
-      loop: true,
-      on:{
-        // 1. 초기화 이전에 슬라이드 복제
-        beforeInit:slideClone,
-        // 2. 활성 pagination 순환하기
-        slideChange:function(instance){
-          swiperPaginationLoop(instance) 
-        }
-      }
-  })
-});
-
 
 // id=52prog 52프로젝트
 $(document).ready(function(){
