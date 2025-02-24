@@ -59,17 +59,16 @@ $(document).ready(function(){
       loop:true,
       slidesPerView: 5,
       spaceBetween: 300,
-      slidesOffsetBefore: 20,
-      slidesOffsetAfter: 20,
       centeredSlides: true,
       breakpoints: {
         // 화면의 넓이가 768px 
         769: {
           slidesPerView: 5
         },
-        768: {
-          slidesPerView: 1,
+        375: {
+          slidesPerView: 1
         },
+        
       },
       autoplay: {
         delay: 2000,

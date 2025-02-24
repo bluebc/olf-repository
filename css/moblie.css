@@ -170,16 +170,16 @@
     display: flex;
   }
   main #shoppingmall .content .shop-tet div h3 {
-    font-size: 4vw;
+    font-size: 5vw;
     font-weight: bold;
     margin-right: 0.5rem;
   }
   main #shoppingmall .content .shop-tet div h2 {
-    font-size: 4vw;
+    font-size: 5vw;
   }
   main #shoppingmall .content .shop-tet h4 {
     text-align: center;
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
   main #shoppingmall .content .shop-tet .shop-now {
     position: absolute;
@@ -207,7 +207,7 @@
     font-size: 6vw;
   }
   main #resetprogram .content .rst-tet h4 {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
   main #resetprogram .content .ret-img {
     margin-left: 0;
@@ -226,7 +226,7 @@
     display: none;
   }
   main #event .content .ev-tet h2 {
-    font-size: 3rem;
+    font-size: 10vw;
   }
   main #event .content .ev-tet h4 {
     font-weight: bold;
@@ -286,4 +286,129 @@
 /* 모바일 767px*/
 /* 모바일2 576px */
 /* 모바일3 갤석시 425px */
-/* 모바일4 아이폰 375px *//*# sourceMappingURL=moblie.css.map */
+@media screen and (max-width: 425px) {
+  main #health .content .he-img .he-swiper {
+    top: 32rem;
+  }
+  main #health .content .he-img .he-swiper .swiper-container {
+    width: 13rem;
+    height: 30rem;
+  }
+  main #health .content .he-img .he-swiper .swiper-container .swiper-wrapper .swiper-slide:nth-child(1) {
+    left: -3rem;
+    top: 3rem;
+  }
+  main #health .content .he-img .he-swiper .swiper-container .swiper-wrapper .swiper-slide:nth-child(2) {
+    left: 3rem;
+    top: -1rem;
+  }
+  main #health .content .he-img .he-swiper .swiper-container .swiper-wrapper .swiper-slide:nth-child(3) {
+    left: -3rem;
+    top: -5rem;
+  }
+  main #health .content .he-img .he-tit {
+    right: 20%;
+  }
+  main #health .content .he-img .he-tit p span {
+    padding: 0;
+  }
+  main #health .content .he-img .he-tit p:nth-child(1) {
+    right: 1.2rem;
+  }
+  main #shoppingmall {
+    padding: 0;
+  }
+  main #resetprogram {
+    padding: 5rem 0;
+  }
+  main #resetprogram .content {
+    padding: 0;
+  }
+  main #resetprogram .content .ret-img {
+    height: auto;
+  }
+  main #resetprogram .content .ret-img img {
+    width: 300px;
+    height: 300px;
+  }
+  main #event .content .swiper-container2 .swiper-wrapper .swiper-slide .ev-sw-img img {
+    width: 300px;
+    height: 300px;
+  }
+  main #event .content .swiper-container2 .swiper-wrapper .swiper-slide .ev-sw-tet {
+    padding: 1rem 5rem;
+  }
+  footer {
+    padding: 0 2rem;
+  }
+  footer .ft-sns ul {
+    gap: 0.5rem;
+  }
+  footer .ft-sns ul li a {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-size: auto 2.5rem;
+  }
+  footer .ft-sns ul li .sns1 {
+    background-position: 0 0;
+  }
+  footer .ft-sns ul li .sns2 {
+    background-position: -2.5rem 0;
+  }
+  footer .ft-sns ul li .sns3 {
+    background-position: -5rem 0;
+  }
+  footer .ft-sns ul li .sns4 {
+    background-position: -7.5rem 0;
+  }
+  footer .ft-sns ul li .sns5 {
+    background-position: -10rem 0;
+  }
+  footer .ft-sns ul li .sns6 {
+    background-position: -12.5rem 0;
+  }
+  footer .ft-sns ul li .sns7 {
+    background-position: -15rem 0;
+  }
+  footer .ft-sns ul li .sns8 {
+    background-position: -17.5rem 0;
+  }
+  footer .ft-fot .ft_info .ft_cs span {
+    line-height: 1.2;
+  }
+  footer .ft-fot .ft_logo a img {
+    width: 80px;
+  }
+}
+/* 모바일4 아이폰 375px */
+@media screen and (max-width: 375px) {
+  footer .ft-sns ul li a {
+    width: 2rem;
+    height: 2rem;
+    background-size: auto 2rem;
+  }
+  footer .ft-sns ul li .sns1 {
+    background-position: 0 0;
+  }
+  footer .ft-sns ul li .sns2 {
+    background-position: -2rem 0;
+  }
+  footer .ft-sns ul li .sns3 {
+    background-position: -4rem 0;
+  }
+  footer .ft-sns ul li .sns4 {
+    background-position: -6rem 0;
+  }
+  footer .ft-sns ul li .sns5 {
+    background-position: -8rem 0;
+  }
+  footer .ft-sns ul li .sns6 {
+    background-position: -10rem 0;
+  }
+  footer .ft-sns ul li .sns7 {
+    background-position: -12rem 0;
+  }
+  footer .ft-sns ul li .sns8 {
+    background-position: -14rem 0;
+  }
+}/*# sourceMappingURL=moblie.css.map */

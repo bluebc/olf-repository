@@ -215,15 +215,15 @@
                     div{
                         display: flex;
                         h3{
-                            font-size: 4vw;
+                            font-size: 5vw;
                             font-weight: bold;
                             margin-right: 0.5rem;
                         }
-                        h2{font-size: 4vw;}
+                        h2{font-size: 5vw;}
                     }
                     h4{
                         text-align: center;
-                        font-size: 3vw;
+                        font-size: 3.5vw;
                     }
                     .shop-now{
                         
@@ -254,7 +254,7 @@
                         font-size: 6vw;
                     }
                     h4{
-                        font-size: 3vw;
+                        font-size: 3.5vw;
                     }
                 }
                 .ret-img{
@@ -290,7 +290,7 @@
         #event{
             .content{
                 .ev-tet{
-                    h2{font-size: 3rem;}
+                    h2{font-size: 10vw;}
                     h4{font-weight: bold;}
                 }
                 .swiper-container2{
@@ -384,10 +384,150 @@
 
 /* 모바일3 갤석시 425px */
 @include galaxy{
-
+    main{
+        #health{
+            .content{
+                .he-img{
+                    .he-swiper{
+                        top: 32rem;
+                        .swiper-container{
+                            width: 13rem;
+                            height: 30rem;
+                            .swiper-wrapper{
+                                .swiper-slide{
+                                    &:nth-child(1){
+                                        left: -3rem;
+                                        top: 3rem;
+                                    }
+                                    &:nth-child(2){
+                                        left: 3rem;
+                                        top: -1rem;
+                                    }
+                                    &:nth-child(3){
+                                        left: -3rem;
+                                        top: -5rem;
+                                    }
+                                }
+                            }
+                            
+                        }
+                    }
+                    .he-tit{
+                        right: 20%;
+                        p{
+                            span{
+                                padding: 0;
+                            }
+                        &:nth-child(1){
+                            right: 1.2rem;
+                        }
+                            
+                        }
+                    } 
+                }
+            }
+        }
+        #story{}
+        #program52{}
+        #shoppingmall{
+            padding: 0;
+        }
+        #resetprogram{
+            padding: 5rem  0;
+            .content{
+                padding: 0;
+                .ret-img{
+                    height: auto;
+                    img{
+                        width: 300px;
+                        height: 300px;
+                    }
+                } 
+            } 
+        }
+        #cs{}
+        #event{
+            .content{
+                .swiper-container2{
+                    .swiper-wrapper{
+                        .swiper-slide{
+                            .ev-sw-img{
+                                img{
+                                    width: 300px;
+                                    height: 300px;
+                                }
+                            }
+                            .ev-sw-tet{
+                                padding: 1rem 5rem;
+                            } 
+                        } 
+                    } 
+                } 
+            } 
+        }
+    }
+    footer{
+        padding: 0 2rem;
+        .ft-sns{
+            ul{
+                gap: 0.5rem;
+                li{
+                    a{
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        background-size: auto 2.5rem;
+                    }
+                    .sns1{background-position: 0 0;}
+                    .sns2{background-position: -2.5rem 0;}
+                    .sns3{background-position: -5rem 0;}
+                    .sns4{background-position: -7.5rem 0;}
+                    .sns5{background-position: -10rem 0;}
+                    .sns6{background-position: -12.5rem 0;}
+                    .sns7{background-position: -15rem 0;}
+                    .sns8{background-position: -17.5rem 0;}
+                } 
+            } 
+        }
+        .ft-fot{
+            .ft_info{
+                .ft_cs{
+                    span{
+                        line-height: 1.2;
+                    }
+                } 
+            }
+            .ft_logo{
+                a{
+                    img{
+                        width: 80px;
+                    }
+                } 
+            }  
+        }  
+    } 
 }
 
 /* 모바일4 아이폰 375px */
 @include iphone{
-
+    footer{
+        .ft-sns{
+            ul{
+                li{
+                    a{
+                        width: 2rem;
+                        height: 2rem;
+                        background-size: auto 2rem;
+                    }
+                    .sns1{background-position: 0 0;}
+                    .sns2{background-position: -2rem 0;}
+                    .sns3{background-position: -4rem 0;}
+                    .sns4{background-position: -6rem 0;}
+                    .sns5{background-position: -8rem 0;}
+                    .sns6{background-position: -10rem 0;}
+                    .sns7{background-position: -12rem 0;}
+                    .sns8{background-position: -14rem 0;}
+                } 
+            } 
+        }
+    }
 }
