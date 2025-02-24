@@ -25,56 +25,34 @@
   main #health {
     background-color: #f4f4f4;
   }
-  main #health .content .he-img {
-    height: 140vh;
-  }
   main #health .content .he-img .he-bg {
     height: 60vh;
   }
-  main #health .content .he-img .he-swiper {
-    top: 47rem;
-    right: 0rem;
-  }
-  main #health .content .he-img .he-swiper .swiper-container {
-    overflow: visible;
-  }
-  main #health .content .he-img .he-swiper .swiper-container .swiper-wrapper .swiper-slide {
+  main #health .content .he-img .he-box {
     position: relative;
-  }
-  main #health .content .he-img .he-swiper .swiper-container .swiper-wrapper .swiper-slide:nth-child(1) {
-    left: -6rem;
-    top: 0rem;
-  }
-  main #health .content .he-img .he-swiper .swiper-container .swiper-wrapper .swiper-slide:nth-child(2) {
-    left: 5rem;
-    top: -5rem;
-  }
-  main #health .content .he-img .he-swiper .swiper-container .swiper-wrapper .swiper-slide:nth-child(3) {
-    left: -3rem;
-    top: -10rem;
-  }
-  main #health .content .he-img .he-tit {
-    writing-mode: vertical-lr;
-    white-space: nowrap;
+    top: 16rem;
+    left: 50%;
     transform: translate(-50%, -50%);
-    bottom: 14%;
-    right: 16%;
   }
-  main #health .content .he-img .he-tit p {
-    position: absolute;
-    color: rgb(99, 99, 99);
+  main #health .content .he-img .he-box .he-container .he-wrapper .he-sw {
+    margin: 0 auto;
+    text-align: center;
   }
-  main #health .content .he-img .he-tit p span {
-    margin-bottom: 0.3rem;
-    border: 1px solid rgb(99, 99, 99);
-    padding: 0.1rem;
-    border-radius: 10%;
+  main #health .content .he-img .he-box .he-container .he-wrapper .he-sw:nth-child(1) {
+    transform: translate(-25%, 30%);
   }
-  main #health .content .he-img .he-tit p:nth-child(1) {
-    right: 2rem;
+  main #health .content .he-img .he-box .he-container .he-wrapper .he-sw:nth-child(2) {
+    transform: translate(-2%, -3%);
   }
-  main #health .content .he-img .he-tit p:nth-child(2) {
-    top: 2rem;
+  main #health .content .he-img .he-box .he-container .he-wrapper .he-sw:nth-child(3) {
+    transform: translate(-18%, -29%);
+  }
+  main #health .content .he-img .he-box .he-container .he-wrapper .he-sw img {
+    width: 250px;
+  }
+  main #health .content .he-img .he-box .he-tit {
+    right: 7rem;
+    bottom: 16rem;
   }
   main #health .content .he-fix h2 {
     font-size: 5vw;
@@ -170,16 +148,16 @@
     display: flex;
   }
   main #shoppingmall .content .shop-tet div h3 {
-    font-size: 4vw;
+    font-size: 5vw;
     font-weight: bold;
     margin-right: 0.5rem;
   }
   main #shoppingmall .content .shop-tet div h2 {
-    font-size: 4vw;
+    font-size: 5vw;
   }
   main #shoppingmall .content .shop-tet h4 {
     text-align: center;
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
   main #shoppingmall .content .shop-tet .shop-now {
     position: absolute;
@@ -207,7 +185,7 @@
     font-size: 6vw;
   }
   main #resetprogram .content .rst-tet h4 {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
   main #resetprogram .content .ret-img {
     margin-left: 0;
@@ -226,7 +204,7 @@
     display: none;
   }
   main #event .content .ev-tet h2 {
-    font-size: 3rem;
+    font-size: 10vw;
   }
   main #event .content .ev-tet h4 {
     font-weight: bold;
@@ -285,5 +263,168 @@
 }
 /* 모바일 767px*/
 /* 모바일2 576px */
+@media screen and (max-width: 576px) {
+  main #health .content .he-img .he-box {
+    top: 13rem;
+  }
+  main #health .content .he-img .he-box .he-container .he-wrapper .he-sw:nth-child(1) {
+    transform: translate(-22%, 30%);
+  }
+  main #health .content .he-img .he-box .he-container .he-wrapper .he-sw:nth-child(2) {
+    transform: translate(-3%, -3%);
+  }
+  main #health .content .he-img .he-box .he-container .he-wrapper .he-sw:nth-child(3) {
+    transform: translate(-18%, -29%);
+  }
+  main #health .content .he-img .he-box .he-container .he-wrapper .he-sw img {
+    width: 200px;
+  }
+  main #health .content .he-img .he-box .he-tit {
+    right: 5rem;
+    bottom: 15rem;
+  }
+}
 /* 모바일3 갤석시 425px */
-/* 모바일4 아이폰 375px *//*# sourceMappingURL=moblie.css.map */
+@media screen and (max-width: 425px) {
+  header .hd_all .m_he_link a {
+    top: 1rem;
+    left: 1rem;
+    width: 3rem;
+    height: 3rem;
+    background-size: 100%;
+  }
+  header .hd_all .gnbgroup button span {
+    height: 3.5rem;
+    width: 9rem;
+  }
+  header .hd_all .m_menu_button {
+    right: 1rem;
+  }
+  main #health .content .he-img .he-box {
+    top: 12rem;
+  }
+  main #health .content .he-img .he-box .he-container .he-wrapper .he-sw img {
+    width: 180px;
+  }
+  main #health .content .he-img .he-box .he-container .he-wrapper .he-sw:nth-child(1) {
+    transform: translate(-21%, 25%);
+  }
+  main #health .content .he-img .he-box .he-container .he-wrapper .he-sw:nth-child(2) {
+    transform: translate(1%, -5%);
+  }
+  main #health .content .he-img .he-box .he-container .he-wrapper .he-sw:nth-child(3) {
+    transform: translate(-16%, -36%);
+  }
+  main #health .content .he-img .he-box .he-tit {
+    right: 3.5rem;
+  }
+  main #health .content .he-img .he-box .he-tit p span {
+    padding: 0;
+  }
+  main #health .content .he-img .he-box .he-tit p:nth-child(1) {
+    right: 1.2rem;
+  }
+  main #shoppingmall {
+    padding: 0;
+  }
+  main #resetprogram {
+    padding: 5rem 0;
+  }
+  main #resetprogram .content {
+    padding: 0;
+  }
+  main #resetprogram .content .ret-img {
+    height: auto;
+  }
+  main #resetprogram .content .ret-img img {
+    width: 300px;
+    height: 300px;
+  }
+  main #event .content .swiper-container2 .swiper-wrapper .swiper-slide .ev-sw-img img {
+    width: 300px;
+    height: 300px;
+  }
+  main #event .content .swiper-container2 .swiper-wrapper .swiper-slide .ev-sw-tet {
+    padding: 1rem 5rem;
+  }
+  footer {
+    padding: 0 2rem;
+  }
+  footer .ft-sns ul {
+    gap: 0.5rem;
+  }
+  footer .ft-sns ul li a {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-size: auto 2.5rem;
+  }
+  footer .ft-sns ul li .sns1 {
+    background-position: 0 0;
+  }
+  footer .ft-sns ul li .sns2 {
+    background-position: -2.5rem 0;
+  }
+  footer .ft-sns ul li .sns3 {
+    background-position: -5rem 0;
+  }
+  footer .ft-sns ul li .sns4 {
+    background-position: -7.5rem 0;
+  }
+  footer .ft-sns ul li .sns5 {
+    background-position: -10rem 0;
+  }
+  footer .ft-sns ul li .sns6 {
+    background-position: -12.5rem 0;
+  }
+  footer .ft-sns ul li .sns7 {
+    background-position: -15rem 0;
+  }
+  footer .ft-sns ul li .sns8 {
+    background-position: -17.5rem 0;
+  }
+  footer .ft-fot .ft_info .ft_cs span {
+    line-height: 1.2;
+  }
+  footer .ft-fot .ft_logo a img {
+    width: 80px;
+  }
+}
+/* 모바일4 아이폰 375px */
+@media screen and (max-width: 375px) {
+  main #health .content .he-img .he-box {
+    top: 10rem;
+  }
+  main #health .content .he-img .he-box .he-container .he-wrapper .he-sw img {
+    border: 5px solid white;
+    width: 150px;
+  }
+  footer .ft-sns ul li a {
+    width: 2rem;
+    height: 2rem;
+    background-size: auto 2rem;
+  }
+  footer .ft-sns ul li .sns1 {
+    background-position: 0 0;
+  }
+  footer .ft-sns ul li .sns2 {
+    background-position: -2rem 0;
+  }
+  footer .ft-sns ul li .sns3 {
+    background-position: -4rem 0;
+  }
+  footer .ft-sns ul li .sns4 {
+    background-position: -6rem 0;
+  }
+  footer .ft-sns ul li .sns5 {
+    background-position: -8rem 0;
+  }
+  footer .ft-sns ul li .sns6 {
+    background-position: -10rem 0;
+  }
+  footer .ft-sns ul li .sns7 {
+    background-position: -12rem 0;
+  }
+  footer .ft-sns ul li .sns8 {
+    background-position: -14rem 0;
+  }
+}/*# sourceMappingURL=moblie.css.map */

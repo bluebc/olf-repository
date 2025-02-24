@@ -1,22 +1,4 @@
 
-// id="health" 건강스토리
-$(document).ready(function(){
-  var swiper = new Swiper(".swiper-container", {
-    direction: "vertical",
-      slidesPerView: 3,
-      spaceBetween: 30,
-      loop: true,
-      on:{
-        // 1. 초기화 이전에 슬라이드 복제
-        beforeInit:slideClone,
-        // 2. 활성 pagination 순환하기
-        slideChange:function(instance){
-          swiperPaginationLoop(instance) 
-        }
-      }
-  })
-});
-
 
 // id=52prog 52프로젝트
 $(document).ready(function(){
@@ -59,17 +41,16 @@ $(document).ready(function(){
       loop:true,
       slidesPerView: 5,
       spaceBetween: 300,
-      slidesOffsetBefore: 20,
-      slidesOffsetAfter: 20,
       centeredSlides: true,
       breakpoints: {
         // 화면의 넓이가 768px 
         769: {
           slidesPerView: 5
         },
-        768: {
-          slidesPerView: 1,
+        375: {
+          slidesPerView: 1
         },
+        
       },
       autoplay: {
         delay: 2000,
