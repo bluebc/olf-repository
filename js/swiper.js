@@ -47,7 +47,7 @@ $(document).ready(function(){
         769: {
           slidesPerView: 5
         },
-        360: {
+        340: {
           slidesPerView: 1
         },
         
