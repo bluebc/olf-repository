@@ -17,6 +17,7 @@ html, body {
   margin: 0px;
   overflow-x: hidden;
   font-family: "S-CoreDream-3Light";
+  scroll-behavior: smooth;
 }
 
 /*header*/
