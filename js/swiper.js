@@ -47,15 +47,15 @@ $(document).ready(function(){
         769: {
           slidesPerView: 5
         },
-        375: {
+        360: {
           slidesPerView: 1
         },
         
       },
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-      },
+      // autoplay: {
+      //   delay: 2000,
+      //   disableOnInteraction: false,
+      // },
       on:{
         // 1. 초기화 이전에 슬라이드 복제
         beforeInit:slideClone,
